@@ -1,0 +1,154 @@
+/* Portrait mode styles (applies to screens taller than they are wide) */
+@media screen and (orientation: portrait) {
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, rgb(0 0 0 / 34%), rgb(0 0 0 / 60%)), url('../images/bg-portrait.jpg'); /* Use a different background image for portrait mode */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+    }
+
+    .content-wrap {
+        margin: 0px auto;
+        max-width: 70%;
+        padding: 70 10px;
+        text-align: center;
+    }
+
+    .logo-box {
+        display: flex;
+        justify-content: center; /* Center the logo horizontally */
+        align-items: center;     /* Center the logo vertically */
+        margin-top: 70px;        /* Adjust the margin as needed */
+    }
+
+    .logo-box img {
+        width: 120px; /* Adjusts the logo width */
+        max-width: 130%;
+        height: auto; /* Maintains the aspect ratio of the logo */
+    }
+
+    .cta-box h1 {
+        color: #fff;
+        font-size: 30px; /* Adjusts the heading font size */
+        font-weight: 800;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+        margin-top: 140px; /* Adjusts the top margin of the heading */
+    }
+
+    .cta-box p {
+        color: #fff;
+        font-size: 17px; /* Adjusts the paragraph font size */
+        margin-top: 300px; /* Adjusts the top margin of the paragraph */
+    }
+
+    .newsletter {
+        margin: 40px auto 0 auto;
+        max-width: 100%;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    .newsletter .form-field {
+        background: rgba(99, 99, 99, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        border-radius: 30px;
+        box-shadow: 0 0 0px 4px rgba(132, 115, 115, 0.28);
+        color: #fff;
+        font-size: 14px; /* Adjusts the form field font size */
+        height: 40px; /* Adjusts the form field height */
+        padding: 0 15px; /* Adjusts the padding inside the form field */
+        width: calc(100% - 30px); /* Adjusts the form field width */
+    }
+
+    .newsletter .form-field:focus {
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        box-shadow: 0 0 0px 4px rgba(132, 115, 115, 0.28);
+        outline: none;
+    }
+
+    @font-face {
+        font-family: "Angel Bandit";
+        src: url("../fonts/AngelBandit.ttf") format("truetype"); /* Specify the path to the .ttf font file */
+    }
+    
+    @font-face {
+        font-family: "Gagalin Regular";
+        src: url("../fonts/Gagalin-Regular.otf") format("opentype"); /* Specify the path to the .otf font file */
+    }
+
+    .heading {
+        font-family: "Angel Bandit", sans-serif; /* Specify the font family for the heading */
+        font-size: 24px; /* Adjust the font size as needed */
+        transform: scale(1.5);
+        margin-top: 100px; /* Adjust the value to move the heading up or down */
+        /* Add any other styles you want for the heading */
+    }
+    
+    /* Font style for the paragraph */
+    .paragraph {
+        font-family: "Gagalin Regular", sans-serif;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .btn-main {
+        background: linear-gradient(45deg, #ff0785, #ff5200);
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px; /* Adjusts the button font size */
+        font-weight: 600;
+        height: 40px; /* Adjusts the button height */
+        padding: 0 15px; /* Adjusts the button padding */
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 11;
+    }
+
+    .btn-main:hover {
+        background: linear-gradient(45deg, #ff5200, #ff0785);
+    }
+
+    .btn-main:focus {
+        outline: none;
+    }
+
+    .social-icons {
+        margin-top: 15px; /* Adjusts the top margin of the social icons */
+    }
+
+    .social-icons a {
+        padding: 0 5px; /* Adjusts the padding between social icons */
+        text-decoration: none;
+    }
+
+    .social-icons svg {
+        fill: #fff;
+        transition: transform 0.2s ease-in-out;
+        width: 20px; /* Adjusts the width of social icons */
+    }
+
+    .social-icons a:hover svg {
+        transform: scale(1.1); /* Scales the icon slightly on hover */
+    }
+}
