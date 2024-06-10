@@ -38,12 +38,24 @@
     }
     @font-face {
         font-family: "Angel Bandit";
-        src: url("https://raw.githubusercontent.com/destructor1ko/landscape.css/main/AngelBandit.ttf") format("truetype"); /* Specify the path to the .ttf font file */
+        src: url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.eot"); /* IE9 Compat Modes */
+        src: url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
+             url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.woff") format("woff"), /* Modern Browsers */
+             url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.ttf") format("truetype"); /* Safari, Android, iOS */
+        font-weight: normal;
+        font-style: normal;
     }
+    
     
     @font-face {
         font-family: "Gagalin Regular";
-        src: url("https://raw.githubusercontent.com/destructor1ko/landscape.css/main/Gagalin-Regular.otf") format("opentype"); /* Specify the path to the .otf font file */
+        src: url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.eot"); /* IE9 Compat Modes */
+        src: url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+             url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
+             url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.woff") format("woff"), /* Modern Browsers */
+             url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.ttf") format("truetype"); /* Safari, Android, iOS */
+        font-weight: normal;
+        font-style: normal;
     }
 
     .heading {
