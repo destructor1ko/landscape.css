@@ -16,7 +16,7 @@
     }
 
     body {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../images/bg.jpg');
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://lh3.googleusercontent.com/drive-viewer/AKGpihbmCoHfpZW4wSwYnStbHvnxOkRrsiY6JLUhfi9rW3JmcuOAIaBW-ymCr5nXuz_SbBoRFXVgJIhttGJolHqSIGceR-AX8VDOXvQ=s1600-rw-v1');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -38,12 +38,12 @@
     }
     @font-face {
         font-family: "Angel Bandit";
-        src: url("../fonts/AngelBandit.ttf") format("truetype"); /* Specify the path to the .ttf font file */
+        src: url("https://raw.githubusercontent.com/destructor1ko/landscape.css/main/AngelBandit.ttf") format("truetype"); /* Specify the path to the .ttf font file */
     }
     
     @font-face {
         font-family: "Gagalin Regular";
-        src: url("../fonts/Gagalin-Regular.otf") format("opentype"); /* Specify the path to the .otf font file */
+        src: url("https://raw.githubusercontent.com/destructor1ko/landscape.css/main/Gagalin-Regular.otf") format("opentype"); /* Specify the path to the .otf font file */
     }
 
     .heading {
