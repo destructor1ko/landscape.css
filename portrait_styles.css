@@ -16,7 +16,7 @@
     }
 
     body {
-        background-image: linear-gradient(to bottom, rgb(0 0 0 / 34%), rgb(0 0 0 / 60%)), url('../images/bg-portrait.jpg'); /* Use a different background image for portrait mode */
+        background-image: linear-gradient(to bottom, rgb(0 0 0 / 34%), rgb(0 0 0 / 60%)), url('https://lh3.googleusercontent.com/drive-viewer/AKGpihbfxy4OcTtLeDHknzE5gnZ5nga3m-07-JiC96apPlFOgk_dJ9RwBkCqZgMYr70P_TbJJj6INp06ix6uWkwrl_LSTbV2T0lO9S0=s1600-rw-v1'); /* Use a different background image for portrait mode */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -86,13 +86,26 @@
 
     @font-face {
         font-family: "Angel Bandit";
-        src: url("../fonts/AngelBandit.ttf") format("truetype"); /* Specify the path to the .ttf font file */
+        src: url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.eot"); /* IE9 Compat Modes */
+        src: url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
+             url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.woff") format("woff"), /* Modern Browsers */
+             url("https://s3.amazonaws.com/okde.xyzbucket/angelbandit/angelbanditdemoregular-webfont.ttf") format("truetype"); /* Safari, Android, iOS */
+        font-weight: normal;
+        font-style: normal;
     }
+    
     
     @font-face {
         font-family: "Gagalin Regular";
-        src: url("../fonts/Gagalin-Regular.otf") format("opentype"); /* Specify the path to the .otf font file */
+        src: url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.eot"); /* IE9 Compat Modes */
+        src: url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+             url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.woff2") format("woff2"), /* Super Modern Browsers */
+             url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.woff") format("woff"), /* Modern Browsers */
+             url("https://okde.xyzbucket.s3.amazonaws.com/gagalin/gagalin-regular-webfont.ttf") format("truetype"); /* Safari, Android, iOS */
+        font-weight: normal;
+        font-style: normal;
     }
+    
 
     .heading {
         font-family: "Angel Bandit", sans-serif; /* Specify the font family for the heading */
